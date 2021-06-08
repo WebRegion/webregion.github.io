@@ -26,7 +26,7 @@ title: Мои сертификаты
 						</div>
 						<div class="card-footer border-0">
 							<ul class="meta list-inline mb-0">
-								<li class="list-inline-item me-3"><i class="far fa-clock me-2"></i>{{ sertificate.date }}</li>
+								<li class="list-inline-item me-3"><i class="far fa-clock me-2"></i>{{ sertificate.date | date: "%A, %d %b %Y" }}</li>
 								<!--<li class="list-inline-item"><i class="fas fa-comment me-2"></i><a class="text-link" href="#">23 Comments</a></li>-->
 							</ul>
 						</div>
