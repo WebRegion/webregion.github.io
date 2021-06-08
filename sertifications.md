@@ -5,7 +5,7 @@ title: Мои сертификаты
 <section class="section pt-5">
     <div class="container blog-cards">	        
 	    <div class="row">
-        {% assign sertifications = site.sertifications | sort: 'date' %}
+        {% assign sertifications = site.sertifications | reverse: 'date' %}
         {% for sertificate in sertifications %}
 		    <div class="col-12 col-md-6 col-lg-4 mb-5">
 			    <div class="card rounded-0 border-0 shadow-sm eq-height">
