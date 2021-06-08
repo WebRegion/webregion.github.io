@@ -64,6 +64,19 @@ collections:
     output: true
   sertifications:
     output: true
+    
+# Мои настройки по умолчанию
+defaults:
+  - scope:
+      type: projects
+    values:
+      layout: project
+  - scope:
+      type: sertifications
+    values:
+      layout: sertification
+
+
 
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
