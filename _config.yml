@@ -75,6 +75,8 @@ defaults:
       type: sertifications
     values:
       layout: sertificate
+      paginate: 5
+      paginate_path: "/sertifications/page:num/"
 
 
 
