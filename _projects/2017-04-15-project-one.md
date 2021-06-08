@@ -1,8 +1,5 @@
 ---
 title: You're up and running!
-date: 2017.04.15
-name: Сертификат по битрикс 1
-short-desc: Краткое описание сертификата
 ---
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).

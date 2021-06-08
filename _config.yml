@@ -74,7 +74,7 @@ defaults:
   - scope:
       type: sertifications
     values:
-      layout: sertification
+      layout: sertificate
 
 
 
