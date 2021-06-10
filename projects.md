@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Мои сертификаты
+title: Мои проекты
 ---
 <section class="section pt-5">
     <div class="container blog-cards">	        
