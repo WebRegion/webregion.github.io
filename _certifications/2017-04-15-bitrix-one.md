@@ -1,8 +1,10 @@
 ---
-title: You're up and running!
+title: ITIL 4.0 Foundation от Учебный центр «Специалист» при МГТУ им.Н.Э.Баумана
 date: 2017.04.15
-name: Сертификат по битрикс 1
+name: ITIL 4.0 Foundation
 short-desc: Краткое описание сертификата
+tags: [itil, management, project]
+image-cert: /images/certification/2021-06-03-itil-foundation.png
 ---
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).

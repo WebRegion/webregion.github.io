@@ -55,6 +55,8 @@ baseurl: ""
 
 permalink: /:title/
 
+#permalink: /:year/:month/:title.html
+
 # The release of Jekyll Now that you're using
 version: v1.2.0
 
@@ -62,7 +64,7 @@ version: v1.2.0
 collections:
   projects:
     output: true
-  sertifications:
+  certifications:
     output: true
     
 # Pagination Settings
@@ -84,9 +86,9 @@ defaults:
     values:
       layout: project
   - scope:
-      type: sertifications
+      type: certifications
     values:
-      layout: sertificate
+      layout: certificate
 
 
 
