@@ -68,14 +68,14 @@ collections:
     output: true
     
 # Pagination Settings
-#pagination:
-#  enabled: true
-#  per_page: 1
-#  permalink: '/page/:num/'
-#  title: ':title - page :num of :max'
-#  limit: 0
-#  sort_field: 'date'
-#  sort_reverse: true    
+pagination:
+  enabled: true
+  per_page: 1
+  permalink: '/page/:num/'
+  title: ':title - page :num of :max'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true    
     
     
     
