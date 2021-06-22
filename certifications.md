@@ -39,7 +39,7 @@ title: Мои сертификаты
 		        <div class="isotope-item col-12 col-lg-4 angular python-django">
 					<div class="card rounded-0 border-0 shadow-sm mb-5">
 						<div class="card-img-container position-relative">
-							<img class="card-img-top rounded-0" src="/images/certificates/{{ certificate.image-name }}" alt="">
+							<img class="card-img-top rounded-0" src="/assets/images/certificates/{{ certificate.image-name }}" alt="">
 							<!--<div class="card-img-overlay overlay-logo text-center">
 								<div class="project-logo"><img class="img-fluid w-50" src="assets/images/logos/logo-1-inverse.svg"></div>
 							</div>-->
