@@ -2,6 +2,10 @@
 layout: default
 title: Мои сертификаты
 ---
+{% assign certifications2 = site.certifications | sort: 'date' %}
+{% for tag in certifications2.tags %}
+<a href="#{{ tag | slugify }}"> {{ tag }} </a>
+{% endfor %}
 <section class="section pt-5">
         <div class="container">
 	        <div class="text-center">
@@ -14,10 +18,7 @@ title: Мои сертификаты
 	                <li class="type" data-filter=".php">PHP</li>
 	            </ul><!--//filters-->
 	        </div>
-	{% assign certifications2 = site.certifications | sort: 'date' %}
-	{% for tag in certifications2.tags %}
-	<a href="#{{ tag | slugify }}"> {{ tag }} </a>
-	{% endfor %}		
+		
 			
 			
 			
