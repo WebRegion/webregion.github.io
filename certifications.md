@@ -39,17 +39,17 @@ title: Мои сертификаты
 		        <div class="isotope-item col-12 col-lg-4 angular python-django">
 					<div class="card rounded-0 border-0 shadow-sm mb-5">
 						<div class="card-img-container position-relative">
-							<img class="card-img-top rounded-0" src="assets/images/projects/project-1-thumb.jpg" alt="">
-							<div class="card-img-overlay overlay-logo text-center">
+							<img class="card-img-top rounded-0" src="/images/certificates/{{ certificate.image-name }}" alt="">
+							<!--<div class="card-img-overlay overlay-logo text-center">
 								<div class="project-logo"><img class="img-fluid w-50" src="assets/images/logos/logo-1-inverse.svg"></div>
-							</div>
+							</div>-->
 							<a class="card-img-overlay overlay-content text-start p-lg-4" href="{{ certificate.url }}">
 								<h5 class="card-title font-weight-bold">Client: Google</h5>
-							    <p class="card-text">Project summary goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel sapien quis nulla dictum euismod...</p>
+							    <p class="card-text">{{ certificate.short-desc }}</p>
 							</a>
 						</div>
 						<div class="card-body pb-0">
-							<h4 class="card-title text-truncate text-center mb-0"><a class="text-link" href="{{ certificate.url }}">SaaS Product</a></h4>
+							<h4 class="card-title text-truncate text-center mb-0"><a class="text-link" href="{{ certificate.url }}">{{ certificate.name }}</a></h4>
 						</div>
 						{% if certificate.tags contains tag %}
 						<div class="card-footer border-0 text-center bg-white pb-4">
@@ -119,58 +119,9 @@ title: Мои сертификаты
 				    </div><!--//card-->
 		        </div><!--//isotope-item-->
 		        
-		        <div class="isotope-item col-12 col-lg-4 react">
-					<div class="card rounded-0 border-0 shadow-sm mb-5">
-						<div class="card-img-container position-relative">
-							<img class="card-img-top rounded-0" src="assets/images/projects/project-4-thumb.jpg" alt="">
-							<div class="card-img-overlay overlay-logo text-center">
-								<div class="project-logo"><img class="img-fluid w-50" src="assets/images/logos/logo-4-inverse.svg"></div>
-							</div>
-							<a class="card-img-overlay overlay-content text-start p-lg-4" href="project.html">
-								<h5 class="card-title font-weight-bold">Client: Dropbox</h5>
-							    <p class="card-text">Project summary goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel sapien quis nulla dictum euismod...</p>
-							</a>
-						</div>
-						<div class="card-body pb-0">
-							<h4 class="card-title text-truncate text-center mb-0"><a class="text-link" href="project.html">Internal Product</a></h4>
-						</div>
-						
-						<div class="card-footer border-0 text-center bg-white pb-4">
-							<ul class="list-inline mb-0 mx-auto">
-						        <li class="list-inline-item"><span class="badge bg-secondary badge-pill">React</span></li>
-						        <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Flux</span></li>
-						        <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Babel</span></li>
-						        <li class="list-inline-item"><span class="badge bg-secondary badge-pill">MongoDB</span></li>
-							</ul>
-					    </div>
-				    </div><!--//card-->
-		        </div><!--//isotope-item-->
+
 		        
-		        <div class="isotope-item col-12 col-lg-4 react php">
-					<div class="card rounded-0 border-0 shadow-sm mb-5">
-						<div class="card-img-container position-relative">
-							<img class="card-img-top rounded-0" src="assets/images/projects/project-5-thumb.jpg" alt="">
-							<div class="card-img-overlay overlay-logo text-center">
-								<div class="project-logo"><img class="img-fluid w-50" src="assets/images/logos/logo-5-inverse.svg"></div>
-							</div>
-							<a class="card-img-overlay overlay-content text-start p-lg-4" href="project.html">
-								<h5 class="card-title font-weight-bold">Client: Spotify</h5>
-							    <p class="card-text">Project summary goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel sapien quis nulla dictum euismod...</p>
-							</a>
-						</div>
-						<div class="card-body pb-0">
-							<h4 class="card-title text-truncate text-center mb-0"><a class="text-link" href="project.html">Mobile App</a></h4>
-						</div>
-						
-						<div class="card-footer border-0 text-center bg-white pb-4">
-							<ul class="list-inline mb-0 mx-auto">
-						        <li class="list-inline-item"><span class="badge bg-secondary badge-pill">React</span></li>
-						        <li class="list-inline-item"><span class="badge bg-secondary badge-pill">PHP</span></li>
-						        <li class="list-inline-item"><span class="badge bg-secondary badge-pill">MySQL</span></li>
-							</ul>
-					    </div>
-				    </div><!--//card-->
-		        </div><!--//isotope-item-->
+
 			    
 	        </div><!--//row-->
 
