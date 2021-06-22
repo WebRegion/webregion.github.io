@@ -2,8 +2,7 @@
 layout: default
 title: Мои сертификаты
 ---
-
-    <section class="section pt-5">
+<section class="section pt-5">
         <div class="container">
 	        <div class="text-center">
 		        <ul id="filters" class="filters mb-5 mx-auto ps-0">
