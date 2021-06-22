@@ -33,12 +33,13 @@ title: Мои сертификаты
 			
 			
 			<div class="project-cards row mb-5 isotope">			
-    {% assign certifications1 = site.certifications | sort: 'date' %}	
+    {% assign certifications1 = site.certifications | sort: 'date' %}
+	
     {% for certificate in certifications1 %}		
 		        <div class="isotope-item col-12 col-lg-4 angular python-django">
 					<div class="card rounded-0 border-0 shadow-sm mb-5">
 						<div class="card-img-container position-relative">
-							<img class="card-img-top rounded-0" src="/assets/images/certificates/{{ certificate.image-name }}" alt="">
+							<img class="card-img-top rounded-0" src="/images/certificates/{{ certificate.image-name }}" alt="">
 							<!--<div class="card-img-overlay overlay-logo text-center">
 								<div class="project-logo"><img class="img-fluid w-50" src="assets/images/logos/logo-1-inverse.svg"></div>
 							</div>-->
@@ -50,6 +51,7 @@ title: Мои сертификаты
 						<div class="card-body pb-0">
 							<h4 class="card-title text-truncate text-center mb-0"><a class="text-link" href="{{ certificate.url }}">{{ certificate.name }}</a></h4>
 						</div>
+						{% for tag in tags %}
 						{% if certificate.tags contains tag %}
 						<div class="card-footer border-0 text-center bg-white pb-4">
 							<ul class="list-inline mb-0 mx-auto">
@@ -59,9 +61,11 @@ title: Мои сертификаты
 							</ul>
 					    </div>
 						{% endif %}
+						{% endfor %}
 				    </div><!--//card-->
 		        </div><!--//isotope-item-->
-	{% endfor %}	
+	{% endfor %}
+	
 		        
 		        <div class="isotope-item col-12 col-lg-4 ruby-rails">
 					<div class="card rounded-0 border-0 shadow-sm mb-5">
