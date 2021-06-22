@@ -61,7 +61,6 @@ title: Мои сертификаты
 							</ul>
 					    </div>
 						{% endif %}
-						
 				    </div><!--//card-->
 		        </div><!--//isotope-item-->
 	{% endfor %}
