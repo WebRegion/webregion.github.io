@@ -2,6 +2,9 @@
 layout: default
 title: Мои сертификаты
 ---
+{% include top-block-profile.html%}
+</header><!--//header-->
+	
 <section class="section pt-5">
     <div class="container">
 	        <div class="text-center">
