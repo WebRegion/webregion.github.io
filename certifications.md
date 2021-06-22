@@ -2,6 +2,11 @@
 layout: default
 title: Мои сертификаты
 ---
+<section class="section pt-5">
+        <div class="container">
+	        <div class="text-center">
+		        <ul id="filters" class="filters mb-5 mx-auto ps-0">
+					<li class="type active" data-filter="*">All</li>
 {% assign rawtags = "" %}
 {% for certifications2 in site.certifications %}
 	{% assign ttags = certifications2.tags | join:'|' | append:'|' %}
@@ -20,15 +25,8 @@ title: Мои сертификаты
 	{% endif %}
 {% endfor %}
 {% for tag in tags %}
-	<a href="#{{ tag | slugify }}"> {{ tag }} </a>
+	<li class="type" data-filter=".{{ tag }}"> {{ tag | capitalize }} </a>
 {% endfor %}
-
-
-<section class="section pt-5">
-        <div class="container">
-	        <div class="text-center">
-		        <ul id="filters" class="filters mb-5 mx-auto ps-0">
-	                <li class="type active" data-filter="*">All</li>
 	                <li class="type" data-filter=".angular">Angular</li>
 	                <li class="type" data-filter=".react">React</li>
 	                <li class="type" data-filter=".python-django">Python/Django</li>
