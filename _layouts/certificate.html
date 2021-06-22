@@ -2,17 +2,12 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+<section class="project-wrapper single-col-max-width py-5 px-4 mx-auto">
+	{% for certificate in site.certificates %}
+	        <div class="section-row">
+		        <div class="mb-5"><img class="img-fluid" src="assets/images/projects/project-figure-main.jpg" alt=""></div>
+		        <h3 class="section-title">{{ certificate.name }}</h3>
+				{{ post.excerpt }}
+	        </div><!--//section-row-->
+	{% endfor %}
+    </section><!--//project-wrapper-->
