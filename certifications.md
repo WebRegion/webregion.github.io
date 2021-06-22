@@ -33,8 +33,7 @@ title: Мои сертификаты
 			
 			
 			<div class="project-cards row mb-5 isotope">			
-    {% assign certifications1 = site.certifications | sort: 'date' %}
-{% for tag in tags %}	
+    {% assign certifications1 = site.certifications | sort: 'date' %}	
     {% for certificate in certifications1 %}		
 		        <div class="isotope-item col-12 col-lg-4 angular python-django">
 					<div class="card rounded-0 border-0 shadow-sm mb-5">
@@ -44,7 +43,7 @@ title: Мои сертификаты
 								<div class="project-logo"><img class="img-fluid w-50" src="assets/images/logos/logo-1-inverse.svg"></div>
 							</div>-->
 							<a class="card-img-overlay overlay-content text-start p-lg-4" href="{{ certificate.url }}">
-								<h5 class="card-title font-weight-bold">Client: Google</h5>
+								<h5 class="card-title font-weight-bold">{{ certificate.name }}</h5>
 							    <p class="card-text">{{ certificate.short-desc }}</p>
 							</a>
 						</div>
@@ -62,8 +61,7 @@ title: Мои сертификаты
 						{% endif %}
 				    </div><!--//card-->
 		        </div><!--//isotope-item-->
-	{% endfor %}
-{% endfor %}	
+	{% endfor %}	
 		        
 		        <div class="isotope-item col-12 col-lg-4 ruby-rails">
 					<div class="card rounded-0 border-0 shadow-sm mb-5">
