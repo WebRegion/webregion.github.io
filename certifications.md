@@ -36,7 +36,7 @@ title: Мои сертификаты
     {% assign certifications1 = site.certifications | sort: 'date' | reverse %}
 	
     {% for certificate in certifications1 %}		
-		        <div class="isotope-item col-12 col-lg-4 angular python-django">
+		        <div class="isotope-item col-12 col-lg-4 {% for tag in certificate.tags %}{{ tag }} {% endfor %}">
 					<div class="card rounded-0 border-0 shadow-sm mb-5">
 						<div class="card-img-container position-relative">
 							<img class="card-img-top rounded-0" src="/images/certificates/{{ certificate.image-name }}" alt="">
