@@ -7,7 +7,7 @@ image-name: 2021.03.28.it.project.png
 tags: [ project management , web , management , IT ]
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+rrrrrNext you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
