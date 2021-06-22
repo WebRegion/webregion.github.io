@@ -1,5 +1,5 @@
 ---
-title: You're up and running!
+title: Сертификат 'IT Product management'
 date: 2021.03.29 11.00.00
 name: IT Product management
 short-desc: Базовый курс 'Управление ИТ продуктом' проверяет общее понимание жизненного цикла и терминологии при управлении выпуском и сопровождением ИТ продукта
