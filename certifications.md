@@ -15,7 +15,8 @@ title: Мои сертификаты
 	                <li class="type" data-filter=".php">PHP</li>
 	            </ul><!--//filters-->
 	        </div>
-	{% for tag in site.certifications.tags %}
+	{% assign certifications2 = site.certifications | sort: 'date' %}
+	{% for tag in certifications2.tags %}
 	<a href="#{{ tag | slugify }}"> {{ tag }} </a>
 	{% endfor %}		
 			
