@@ -33,7 +33,7 @@ title: Мои сертификаты
 			
 			
 			<div class="project-cards row mb-5 isotope">			
-    {% assign certifications1 = site.certifications | sort: 'date' %}
+    {% assign certifications1 = site.certifications | sort: 'date' | reverse %}
 	
     {% for certificate in certifications1 %}		
 		        <div class="isotope-item col-12 col-lg-4 angular python-django">
