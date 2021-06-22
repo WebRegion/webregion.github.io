@@ -51,7 +51,7 @@ title: Мои сертификаты
 						<div class="card-body pb-0">
 							<h4 class="card-title text-truncate text-center mb-0"><a class="text-link" href="{{ certificate.url }}">{{ certificate.name }}</a></h4>
 						</div>
-						{% for tag in tags %}
+						
 						{% if certificate.tags contains tag %}
 						<div class="card-footer border-0 text-center bg-white pb-4">
 							<ul class="list-inline mb-0 mx-auto">
@@ -61,7 +61,7 @@ title: Мои сертификаты
 							</ul>
 					    </div>
 						{% endif %}
-						{% endfor %}
+						
 				    </div><!--//card-->
 		        </div><!--//isotope-item-->
 	{% endfor %}
