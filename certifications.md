@@ -2,6 +2,7 @@
 layout: default
 title: Мои сертификаты
 ---
+
     <section class="section pt-5">
         <div class="container">
 	        <div class="text-center">
@@ -20,10 +21,10 @@ title: Мои сертификаты
 			
 			
 			
-    {% assign certifications = site.certifications | sort: 'date' %}
-    {% for certificate in certifications %}
+    {% assign certifications1 = site.certifications | sort: 'date' %}
+    {% for certificate in certifications1 %}
 	
-
+1
 
 
 
@@ -312,7 +313,6 @@ title: Мои сертификаты
 	    <div class="row">
         {% assign certifications = site.certifications | sort: 'date' %}
         {% for certificate in certifications %}
-		{% assign ttags = certificate.tags | join:'|' | append:'|' %}
 		    <div class="col-12 col-md-6 col-lg-4 mb-5">
 			    <div class="card rounded-0 border-0 shadow-sm eq-height">
 					<div class="card-img-container position-relative">
