@@ -25,7 +25,7 @@ title: Мои сертификаты
 	{% endif %}
 {% endfor %}
 {% for tag in tags %}
-	<li class="type" data-filter=".{{ tag }}"> {{ tag | capitalize }} </a>
+	<li class="type" data-filter=".{{ tag }}">{{ tag | capitalize }}</li>
 {% endfor %}
 	                <li class="type" data-filter=".angular">Angular</li>
 	                <li class="type" data-filter=".react">React</li>
@@ -39,13 +39,8 @@ title: Мои сертификаты
 			
 			
     {% assign certifications1 = site.certifications | sort: 'date' %}
-    {% for certificate in certifications1 %}
-	
-1
-
-
-
-	{% endfor %}		
+{% for tag in tags %}	
+    {% for certificate in certifications1 %}		
 	        <div class="project-cards row mb-5 isotope">
 		        <div class="isotope-item col-12 col-lg-4 angular python-django">
 					<div class="card rounded-0 border-0 shadow-sm mb-5">
@@ -54,25 +49,27 @@ title: Мои сертификаты
 							<div class="card-img-overlay overlay-logo text-center">
 								<div class="project-logo"><img class="img-fluid w-50" src="assets/images/logos/logo-1-inverse.svg"></div>
 							</div>
-							<a class="card-img-overlay overlay-content text-start p-lg-4" href="project.html">
+							<a class="card-img-overlay overlay-content text-start p-lg-4" href="{{ certificate.url }}">
 								<h5 class="card-title font-weight-bold">Client: Google</h5>
 							    <p class="card-text">Project summary goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel sapien quis nulla dictum euismod...</p>
 							</a>
 						</div>
 						<div class="card-body pb-0">
-							<h4 class="card-title text-truncate text-center mb-0"><a class="text-link" href="project.html">SaaS Product</a></h4>
+							<h4 class="card-title text-truncate text-center mb-0"><a class="text-link" href="{{ certificate.url }}">SaaS Product</a></h4>
 						</div>
-						
+						{% if certificate.tags contains tag %}
 						<div class="card-footer border-0 text-center bg-white pb-4">
 							<ul class="list-inline mb-0 mx-auto">
-						        <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Angular</span></li>
-						        <li class="list-inline-item"><span class="badge bg-secondary badge-pill" >Django</span></li>
-						        <li class="list-inline-item"><span class="badge bg-secondary badge-pill">MongoDB</span></li>
-						        <li class="list-inline-item"><span class="badge bg-secondary badge-pill">HTML/CSS</span></li>
+								{% for tag in certificate.tags %}
+						        <li class="list-inline-item"><span class="badge bg-secondary badge-pill">{{ tag | capitalize }}</span></li>
+								{% endfor %}
 							</ul>
 					    </div>
+						{% endif %}
 				    </div><!--//card-->
 		        </div><!--//isotope-item-->
+	{% endfor %}
+{% endfor %}	
 		        
 		        <div class="isotope-item col-12 col-lg-4 ruby-rails">
 					<div class="card rounded-0 border-0 shadow-sm mb-5">
