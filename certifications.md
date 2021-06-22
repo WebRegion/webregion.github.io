@@ -24,7 +24,7 @@ title: Мои сертификаты
 		{% endunless %}
 	{% endif %}
 {% endfor %}
-{% for tag in tags %}
+{% for tag in tags | sort %}
 	<li class="type" data-filter=".{{ tag | replace: " ", "-" }}">{{ tag | capitalize }}</li>
 {% endfor %}
 	            </ul><!--//filters-->
