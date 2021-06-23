@@ -7,4 +7,4 @@ image-name: 2021.06.03.it.project.pmbok.png
 org-name: Центр компьютерного обучения «Специалист» при МГТУ им.Н.Э.Баумана
 tags: [ Management , PMI , PMBOK 6 , IT ]
 ---
-тут текст
+тут текст 
