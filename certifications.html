@@ -40,7 +40,7 @@ title: Мои сертификаты
 	
     {% for certificate in certifications1 %}		
 		        <div class="isotope-item col-12 col-lg-4 {% for tag in certificate.tags %}{{ tag | replace: " ", "-" }} {% endfor %}">
-					<div class="card rounded-0 border-0 shadow-sm pt-3 mb-5"> 
+					<div class="card rounded-0 border-0 shadow-sm pt-4 mb-5">
 						<div class="card-img-container position-relative" style="text-align: center;"> 
 							<img class="card-img-top rounded-0" style="background-image: url('/images/certificates/{{ certificate.image-name }}'); background-position: center center; background-repeat: no-repeat; background-size: cover; width: 356px; height: 252px;" alt="">
 							<!--<div class="card-img-overlay overlay-logo text-center">
