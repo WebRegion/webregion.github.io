@@ -40,7 +40,7 @@ title: Мои сертификаты
 	
     {% for certificate in certifications1 %}		
 		        <div class="isotope-item col-12 col-lg-4 {% for tag in certificate.tags %}{{ tag | replace: " ", "-" }} {% endfor %}">
-					<div class="card rounded-0 border-0 shadow-sm pt-4 mb-5">
+					<div class="card rounded-0 border-0 shadow-sm pt-3 pb-3 mb-3">
 						<div class="card-img-container position-relative" style="text-align: center;"> 
 							<img class="card-img-top rounded-0" style="background-image: url('/images/certificates/{{ certificate.image-name }}'); background-position: center center; background-repeat: no-repeat; background-size: cover; width: 356px; height: 252px;" alt="">
 							<!--<div class="card-img-overlay overlay-logo text-center">
@@ -55,7 +55,7 @@ title: Мои сертификаты
 							<h4 class="card-title text-truncate text-center mb-0"><a class="text-link" href="{{ certificate.url }}">{{ certificate.name }}</a></h4>
 						</div>
 						{% if certificate.tags %}
-						<div class="card-footer border-0 text-center bg-white pb-4">
+						<div class="card-footer border-0 text-center bg-white">
 							<ul class="list-inline mb-0 mx-auto">
 								{% for tag in certificate.tags %}
 						        <li class="list-inline-item"><span class="badge bg-secondary badge-pill">{{ tag }}</span></li>
