@@ -5,7 +5,8 @@ title: Мои сертификаты
 <div class="header-intro theme-bg-primary text-white py-5">
 	<div class="container">
 		<h2 class="page-heading mb-3">{{ page.title }}</h2>
-		<div class="page-heading-tagline">Я много занимаюсь саморазвитием. На данной странице представлены различные сертификаты, подтверждающие мой уровень знаний</div> 
+		<div class="page-heading-tagline" style="max-width: 100%">Я много занимаюсь саморазвитием и постоянно пытаюсь выделить время для получения новых знаний.<br />
+		На данной странице представлены различные сертификаты, которые я получил ранее по интересным для меня сферам развития.<br />Посмотреть подробности по сертификату можно просто кликнув на него.</div> 
 	</div><!--//container-->
 </div>
 </header><!--//header-->
@@ -47,7 +48,7 @@ title: Мои сертификаты
 		        <div class="isotope-item col-12 col-lg-4 {% for tag in certificate.tags %}{{ tag | replace: " ", "-" }} {% endfor %}">
 					<div class="card rounded-0 border-0 shadow-sm pb-2 mb-3">
 						<div class="card-img-container position-relative" style="text-align: center;"> 
-							<img class="card-img-top rounded-0" style="background-image: url('/images/certificates/{{ certificate.image-name }}'); background-position: center center; background-repeat: no-repeat; background-size: cover; width: 100%; height: 265px;" alt="">
+							<img class="card-img-top rounded-0" style="background-image: url('/images/certificates/{{ certificate.image-name }}'); background-position: center center; background-repeat: no-repeat; background-size: cover; width: 100%; height: 265px;">
 							<div class="card-img-overlay overlay-logo text-center">
 								<div class="project-logo" style="padding: 0 25px;"><h5>{{ certificate.org-name }}</h5><!--<img class="img-fluid w-50" src="assets/images/logos/logo-1-inverse.svg">--></div>
 							</div>
