@@ -45,11 +45,11 @@ title: Мои сертификаты
 	
     {% for certificate in certifications1 %}		
 		        <div class="isotope-item col-12 col-lg-4 {% for tag in certificate.tags %}{{ tag | replace: " ", "-" }} {% endfor %}">
-					<div class="card rounded-0 border-0 shadow-sm pt-3 pb-3 mb-3">
+					<div class="card rounded-0 border-0 shadow-sm pb-2 mb-3">
 						<div class="card-img-container position-relative" style="text-align: center;"> 
-							<img class="card-img-top rounded-0" style="background-image: url('/images/certificates/{{ certificate.image-name }}'); background-position: center center; background-repeat: no-repeat; background-size: cover; width: 356px; height: 252px;" alt="">
+							<img class="card-img-top rounded-0" style="background-image: url('/images/certificates/{{ certificate.image-name }}'); background-position: center center; background-repeat: no-repeat; background-size: cover; width: 100%; height: 265px;" alt="{{ certificate.name }}">
 							<div class="card-img-overlay overlay-logo text-center">
-								<div class="project-logo"><h5>{{ certificate.org-name }}</h5><!--<img class="img-fluid w-50" src="assets/images/logos/logo-1-inverse.svg">--></div>
+								<div class="project-logo" style="padding: 0 25px;"><h5>{{ certificate.org-name }}</h5><!--<img class="img-fluid w-50" src="assets/images/logos/logo-1-inverse.svg">--></div>
 							</div>
 							<a class="card-img-overlay overlay-content text-start p-lg-4" href="{{ certificate.url }}">
 								<h5 class="card-title font-weight-bold">{{ certificate.name }}</h5>
