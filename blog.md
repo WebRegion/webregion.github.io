@@ -1,0 +1,38 @@
+---
+layout: default
+title: Мой блог
+permalink: /about/
+---
+{% include top-block-profile.html %}
+</header><!--//header-->
+    <section class="section-featured-projects py-5">
+        <div class="container">
+	        <h3 class="section-title font-weight-bold text-center mb-5">Последние полученные сертификаты</h3>
+        
+	        <div class="project-cards row mb-5">
+				<div class="col-12 col-lg-4">
+				</div>
+			
+{% assign posts1 = site.posts | sort: 'date' | reverse %}
+{% for post in site.posts %}			
+		        <div class="col-12 col-lg-4">
+					<article class="post">
+
+					  <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+					  <div class="entry">
+						{{ post.excerpt }}
+					  </div>
+
+					  <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+					</article>
+		        </div>
+{% endfor %}
+   
+	        </div><!--//row-->
+	        <div class="text-center">
+	            <a class="btn btn-primary" href="/certifications/">Посмотреть все сертификаты</a>
+	        </div>
+        </div><!--///container-->
+        
+    </section>
