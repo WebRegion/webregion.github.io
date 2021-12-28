@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<div class="header-intro theme-bg-primary text-white py-5">
+	<div class="container position-relative">
+        <div class="row g-2 g-lg-3">
+	        <div class="col-12 col-md-2">
+	            <img class="profile-large d-inline-block rounded-circle align-self-center mb-2 mb-lg-0" src="{{ site.baseurl }}/assets/images/logo-cert.png" alt="">
+	        </div><!--//col-->
+			<div class="col align-self-center">
+			    <h2 class="page-heading mb-2">{{ page.title }}</h2>
+			    <div class="mb-3">{{ page.short-desc }}</div>
+			    <ul class="social-list-square list-inline mb-0">
+				    <li class="list-inline-item mb-3 mb-lg-0"><span class="theme-btn-on-bg btn btn-sm font-weight-bold theme-btn-cta">{{ page.org-name }}</span></li>
+					<li class="list-inline-item mb-3 mb-lg-0"><span class="theme-btn-on-bg btn btn-sm font-weight-bold theme-btn-cta">{{ page.date | date: "%d %b %Y" }}</span></li>
+			    </ul><!--//social-list-->
+			</div><!--//col-->
+		</div>
+	</div><!--//container-->
+</div><!--//header-intro-->
+</header><!--//header-->
+ 
+<section class="project-wrapper single-col-max-width py-5 px-4 mx-auto">
+	<div class="section-row">
+	<div class="mb-5"><img class="img-fluid" src="{{ site.baseurl }}/images/certificates/{{ page.image-name }}" alt=""></div>
+	</div><!--//section-row-->
+</section><!--//project-wrapper-->
