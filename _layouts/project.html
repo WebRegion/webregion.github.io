@@ -41,19 +41,14 @@ layout: default
 				        <ol class="carousel-indicators">
 							<!--<li data-bs-target="#project-carousel" data-slide-to="0" class="active"></li>-->
 						{% for slide in page.sliders %}	
-							<li data-bs-target="#project-carousel" data-slide-to="{{ forloop.index }}" {% if forloop.index == 1 %} class="active" {% endif %}></li>
+							<li data-bs-target="#project-carousel" data-slide-to="{{ forloop.index }}"{% if forloop.index == 1 %} class="active"{% endif %}></li>
 						{% endfor %} 	
 						</ol>
 						
-						<div class="carousel-inner">
-						<!-- <div class="carousel-item active">
-							    <img class="d-block w-100" src="assets/images/projects/project-slide-1.png" alt="">
-							</div> -->	
-						{% for slide in page.sliders %}	
+						<div class="carousel-inner">{% for slide in page.sliders %}	
 							<div class="carousel-item{% if forloop.index == 1 %} active{% endif %}">
 							    <img class="d-block w-100" src="/images/projects/{{ page.image-path }}/{{ slide }}" alt="">
-							</div>
-						{% endfor %} 
+							</div>{% endfor %} 
 						</div>
 						
 						<a class="carousel-control-prev" href="#project-carousel" role="button" data-slide="prev">
