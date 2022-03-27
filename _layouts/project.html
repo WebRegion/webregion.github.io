@@ -41,7 +41,7 @@ layout: default
 				        <ol class="carousel-indicators">
 							<!--<li data-bs-target="#project-carousel" data-slide-to="0" class="active"></li>-->
 						{% for slide in page.sliders %}	
-							<li data-bs-target="#project-carousel" data-slide-to="{{forloop.index}}" {% if forloop.index == 0 %} class="active" {% endif %}></li>
+							<li data-bs-target="#project-carousel" data-slide-to="{{forloop.index}}" {% if forloop.index == 1 %} class="active" {% endif %}></li>
 						{% endfor %} 	
 						</ol>
 						
@@ -50,7 +50,7 @@ layout: default
 							    <img class="d-block w-100" src="assets/images/projects/project-slide-1.png" alt="">
 							</div> -->	
 						{% for slide in page.sliders %}	
-							<div class="carousel-item {% if forloop.index == 0 %} active{% endif %}">
+							<div class="carousel-item {% if forloop.index == 1 %} active{% endif %}">
 							    <img class="d-block w-100" src="/images/projects/{{ page.image-path }}/{{ slide }}" alt="">
 							</div>
 						{% endfor %} 
@@ -166,8 +166,8 @@ layout: default
 				         </ul>
 			        </div>
 		        <div class="sidebar-row">
-				        <h3 class="sidebar-title mb-3">Technologies Used</h3>
-			            <p class="mb-4">This template <strong>includes majority of the web development icons</strong> you can use in your case studies. Below are some examples:</p>
+				        <h3 class="sidebar-title mb-3">Технологии проекта</h3>
+			            <p class="mb-4">В данном проекте <strong>использовались</strong> следующие технологии:</p>
 			            <div class="webdev-icons row mb-5 justify-content-center">
 							{% for tehno in page.tehnos %}
 							<div class="webdev-icon col-3 col-xl-2 me-0 mb-4"><img class="img-fluid" src="/assets/images/webdev-icons/{{ tehno }}.svg"></div>
