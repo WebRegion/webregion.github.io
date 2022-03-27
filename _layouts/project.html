@@ -41,7 +41,7 @@ layout: default
 				        <ol class="carousel-indicators">
 							<!--<li data-bs-target="#project-carousel" data-slide-to="0" class="active"></li>-->
 						{% for slide in page.sliders %}	
-							<li data-bs-target="#project-carousel" data-slide-to="{{ slide.index }}" {% if slide.index = 0 %} class="active" {% endif %}></li>
+							<li data-bs-target="#project-carousel" data-slide-to="{{ slide.index }}" {% if slide.index == 0 %} class="active" {% endif %}></li>
 						{% endfor %} 	
 						</ol>
 						
@@ -50,7 +50,7 @@ layout: default
 							    <img class="d-block w-100" src="assets/images/projects/project-slide-1.png" alt="">
 							</div> -->	
 						{% for slide in page.sliders %}	
-							<div class="carousel-item {% if slide.index = 0 %} active{% endif %}">
+							<div class="carousel-item {% if slide.index == 0 %} active{% endif %}">
 							    <img class="d-block w-100" src="/images/projects/{{ page.image-path }}/{{ slide }}" alt="">
 							</div>
 						{% endfor %} 
