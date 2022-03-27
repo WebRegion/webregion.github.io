@@ -10,6 +10,7 @@ site-org: http://planka-pr.ru/
 tags: [ PHP, Wordpress ]
 works: [ Верстка, Программирование ]
 sliders: [ 1.png, 2.png, 3.png, 4.png, 5.png ]
+tehnos: [ html5, php, javascript, jquery-alt, mysql-alt, bootstrap4, css3, sass, less, webpack ]
 ---
 <p>Разработка сайта «с нуля» для маркетиногового коммуникационного агенства полного цикла «Planka»</p>
 
