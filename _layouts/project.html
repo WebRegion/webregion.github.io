@@ -50,7 +50,7 @@ layout: default
 							    <img class="d-block w-100" src="assets/images/projects/project-slide-1.png" alt="">
 							</div> -->	
 						{% for slide in page.sliders %}	
-							<div class="carousel-item {% if forloop.index == 1 %} active{% endif %}">
+							<div class="carousel-item{% if forloop.index == 1 %} active{% endif %}">
 							    <img class="d-block w-100" src="/images/projects/{{ page.image-path }}/{{ slide }}" alt="">
 							</div>
 						{% endfor %} 
