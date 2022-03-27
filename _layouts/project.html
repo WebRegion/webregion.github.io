@@ -41,7 +41,7 @@ layout: default
 				        <ol class="carousel-indicators">
 							<!--<li data-bs-target="#project-carousel" data-slide-to="0" class="active"></li>-->
 						{% for slide in page.sliders %}	
-							<li data-bs-target="#project-carousel" data-slide-to="{{ forloop.index }}"{% if forloop.index == 1 %} class="active"{% endif %}></li>
+							<li data-bs-target="#project-carousel" data-slide-to="{{ forloop.index -1 }}"{% if forloop.index == 1 %} class="active"{% endif %}></li>
 						{% endfor %} 	
 						</ol>
 						
