@@ -5,7 +5,8 @@ name: «Planka» - Коммуникационное агенство
 short-desc: Разработка сайта «с нуля» для маркетиногового коммуникационного агенства полного цикла «Planka».
 image-path: planka-pr
 image-logo: 1.png
-org-name: «Planka» - Коммуникационное агенство
+org-name: «Planka» - Коммуникационное агенство маркетинговое агенство полного цикла
+site-org: http\://planka-pr.ru/
 tags: [ PHP, Wordpress ]
 ---
 
