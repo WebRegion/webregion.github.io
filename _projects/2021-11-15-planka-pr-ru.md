@@ -3,7 +3,8 @@ title: «Planka» - Коммуникационное агенство
 date: 2021.11.15
 name: «Planka» - Коммуникационное агенство
 short-desc: Разработка сайта «с нуля» для маркетиногового коммуникационного агенства полного цикла «Planka».
-image-name: 2011.09.14.it.pc.png
+image-path: planka-pr
+image-logo: 1.png
 org-name: «Planka» - Коммуникационное агенство
 tags: [ PHP, Wordpress ]
 ---
