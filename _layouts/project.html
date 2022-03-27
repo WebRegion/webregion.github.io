@@ -40,7 +40,7 @@ layout: default
 			        <div id="project-carousel" class="theme-carousel carousel slide mb-5" data-ride="carousel">
 				        <ol class="carousel-indicators">
 						{% for slide in page.sliders %}	
-							<li data-bs-target="#project-carousel" data-slide-to="{{ forloop.index0 }}"{% if forloop.index == 0 %} class="active"{% endif %}></li>
+							<li data-bs-target="#project-carousel" data-slide-to="{{ forloop.index0 }}"{% if forloop.index0 == 0 %} class="active"{% endif %}></li>
 						{% endfor %} 	
 						</ol>
 						
