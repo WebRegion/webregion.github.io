@@ -15,7 +15,31 @@ title: Портфолио
     <div class="container">
 
 <!-- start block navigation -->
-
+	        <div class="text-center">
+		        <ul id="filters" class="filters mb-5 mx-auto ps-0">
+					<li class="type active" data-filter="*">All</li>
+{% assign rawtags = "" %}
+{% for projects2 in site.projects %}
+	{% assign ttags = projects2.tags | join:'|' | append:'|' %}
+	{% assign rawtags = rawtags | append:ttags %}
+{% endfor %}
+{% assign rawtags = rawtags | split:'|' | sort %}
+{% assign tags = "" %}
+{% for tag in rawtags %}
+	{% if tag != "" %}
+		{% if tags == "" %}
+			{% assign tags = tag | split:'|' %}
+		{% endif %}
+		{% unless tags contains tag %}
+			{% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
+		{% endunless %}
+	{% endif %}
+{% endfor %}
+{% for tag in tags | sort %}
+	<li class="type" data-filter=".{{ tag | replace: " ", "-" }}">{{ tag | upcase }}</li>
+{% endfor %}
+	            </ul><!--//filters--> 
+	        </div>
 <!-- end block navigation -->
 
 
