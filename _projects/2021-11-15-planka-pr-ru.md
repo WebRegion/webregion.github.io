@@ -7,7 +7,7 @@ image-path: planka-pr
 image-logo: 1.png
 org-name: «Planka» - Коммуникационное маркетинговое агенство полного цикла
 site-org: http://planka-pr.ru/
-tags: [ PHP, Wordpress, JS, BS4, MySQL ]
+tags: [ PHP, WordPress, JS, BS4, MySQL ]
 works: [ Верстка, Программирование, Настройка сервера ]
 sliders: [ 1.png, 2.png, 3.png, 4.png, 5.png ]
 tehnos: [ html5, php, javascript, jquery-alt, mysql-alt, bootstrap4, css3, sass, less, webpack ]
