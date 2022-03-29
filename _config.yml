@@ -65,7 +65,7 @@ version: v1.2.0
 # Мои коллекции
 collections:
   projects:
-  	- title: "Портфолио работ"
+  	title: "Портфолио работ"
     output: true
   certifications:
     output: true
