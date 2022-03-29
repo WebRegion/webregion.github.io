@@ -85,6 +85,8 @@ collections:
 defaults:
   - scope:
       type: projects
+	  name: "Название"
+	  title: "Тайтл"
     values:
       layout: project
   - scope:
