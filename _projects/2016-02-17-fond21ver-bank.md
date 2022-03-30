@@ -4,7 +4,7 @@ date: 2016.02.17
 name: «Интернациональный фонд XXI век». Банк-клиент
 short-desc: Разработка «с нуля» web-приложения для «Интернационального фонда XXI век».
 image-path: 21vek-bank
-image-logo: 3.png
+image-logo: 6.png
 org-name: «Интернациональный фонд XXI век»
 site-org: #
 tags: [ PHP, Angular, BS4, MySQL, MVC ]
