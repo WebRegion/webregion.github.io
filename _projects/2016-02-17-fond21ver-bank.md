@@ -7,7 +7,7 @@ image-path: 21vek-bank
 image-logo: 6.png
 org-name: «Интернациональный фонд XXI век»
 site-org: #
-tags: [ PHP, Angular, BS4, MySQL, MVC, API ]
+tags: [ PHP, Angular, MySQL, MVC, API ]
 works: [ Верстка, Программирование, Настройка сервера, Выстраивание архитектуры проекта ]
 sliders: [ 1.png, 2.png, 3.png, 4.png, 5.png, 6.png ]
 tehnos: [ html5, php, javascript, jquery-alt, mysql-alt, bootstrap4, css3, sass, less, webpack, angular ]
