@@ -7,7 +7,7 @@ image-path: yargazservis
 image-logo: 1.png
 org-name: «ЯРАВТОГАЗСЕРВИС» - сертифицированный диллер BRC в г.Ярославле
 site-org: https://yargazservis.ru/
-tags: [ HTML, JS, ]
+tags: [ HTML, JS, CSS ]
 works: [ Верстка, Программирование ]
 sliders: [ 1.png, 2.png, 3.png, 4.png, 5.png ]
 tehnos: [ html5, javascript, jquery-alt, css3 ]
